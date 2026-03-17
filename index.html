@@ -1,0 +1,166 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Investment Analyst & Solutions Architect | Portfolio</title>
+    <style>
+        :root {
+            --bg: #020617; /* Deep Midnight */
+            --card-bg: #0f172a;
+            --text-main: #f8fafc;
+            --text-dim: #94a3b8;
+            --accent: #10b981; /* Emerald Green */
+            --border: #1e293b;
+        }
+
+        body {
+            font-family: 'Inter', -apple-system, sans-serif;
+            background-color: var(--bg);
+            color: var(--text-main);
+            margin: 0;
+            line-height: 1.6;
+        }
+
+        /* Smooth Scrolling */
+        html { scroll-behavior: smooth; }
+
+        .container { max-width: 1100px; margin: 0 auto; padding: 0 2rem; }
+
+        /* Navigation */
+        nav {
+            padding: 1.5rem 0;
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            border-bottom: 1px solid var(--border);
+        }
+
+        .nav-links a {
+            color: var(--text-dim);
+            text-decoration: none;
+            margin-left: 2rem;
+            font-size: 0.9rem;
+            font-weight: 500;
+            transition: 0.3s;
+        }
+
+        .nav-links a:hover { color: var(--accent); }
+
+        /* Hero Section */
+        header { padding: 100px 0; }
+        .hero-tag {
+            color: var(--accent);
+            font-size: 0.8rem;
+            font-weight: 700;
+            text-transform: uppercase;
+            letter-spacing: 4px;
+            margin-bottom: 1rem;
+            display: block;
+        }
+
+        h1 { font-size: 4rem; margin: 0; letter-spacing: -2px; line-height: 1; }
+        .hero-p { font-size: 1.25rem; color: var(--text-dim); max-width: 600px; margin-top: 1.5rem; }
+
+        /* Skills/Stack Section */
+        .stack-grid {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(150px, 1fr));
+            gap: 1rem;
+            margin-top: 3rem;
+        }
+
+        .stack-item {
+            background: var(--card-bg);
+            padding: 1rem;
+            border: 1px solid var(--border);
+            border-radius: 8px;
+            text-align: center;
+            font-size: 0.8rem;
+            font-weight: 600;
+        }
+
+        /* Projects Section */
+        .section-title { margin-top: 120px; font-size: 1.5rem; border-bottom: 1px solid var(--border); padding-bottom: 1rem; }
+        
+        .project-card {
+            background: var(--card-bg);
+            border: 1px solid var(--border);
+            border-radius: 12px;
+            padding: 2rem;
+            margin-top: 2rem;
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            transition: 0.3s;
+            text-decoration: none;
+            color: inherit;
+        }
+
+        .project-card:hover { border-color: var(--accent); transform: scale(1.01); }
+        .project-info h3 { margin: 0; font-size: 1.5rem; }
+        .project-info p { color: var(--text-dim); font-size: 0.95rem; margin: 0.5rem 0 0; }
+        .project-link { color: var(--accent); font-weight: 700; }
+
+        /* Experience Section */
+        .exp-row { display: flex; justify-content: space-between; margin-top: 3rem; padding-bottom: 2rem; border-bottom: 1px solid var(--border); }
+        .exp-company { font-weight: 700; font-size: 1.2rem; }
+        .exp-role { color: var(--accent); font-weight: 600; }
+        .exp-date { color: var(--text-dim); font-size: 0.9rem; }
+
+        footer { padding: 80px 0; text-align: center; color: var(--text-dim); font-size: 0.9rem; }
+    </style>
+</head>
+<body>
+
+<div class="container">
+    <nav>
+        <div style="font-weight: 900; font-size: 1.2rem; border: 2px solid var(--accent); padding: 5px 10px;">ANALYST.OS</div>
+        <div class="nav-links">
+            <a href="#stack">Stack</a>
+            <a href="#work">Projects</a>
+            <a href="#exp">Experience</a>
+        </div>
+    </nav>
+
+    <header>
+        <span class="hero-tag">Available for Strategic Roles</span>
+        <h1>Investment Analyst <br><span style="color: var(--accent);">Built Different.</span></h1>
+        <p class="hero-p">Specializing in RTL Underwriting, Private Credit, and Custom FinTech Solutions. I don't just analyze deals—I build the systems that scale them.</p>
+        
+        <div class="stack-grid" id="stack">
+            <div class="stack-item">RTL Underwriting</div>
+            <div class="stack-item">Private Credit</div>
+            <div class="stack-item">HTML/CSS/JS</div>
+            <div class="stack-item">Financial Modeling</div>
+            <div class="stack-item">GitHub Architecture</div>
+            <div class="stack-item">Python (Learning)</div>
+        </div>
+    </header>
+
+    <h2 class="section-title" id="work">Featured Deployment</h2>
+    <a href="https://yourusername.github.io/fidelis-analyst-tools/" class="project-card" target="_blank">
+        <div class="project-info">
+            <h3>Fidelis Underwriting Suite</h3>
+            <p>A proprietary multi-state compliance engine built to handle high-velocity securitization pipelines.</p>
+        </div>
+        <div class="project-link">VIEW LIVE TOOL →</div>
+    </a>
+
+    <h2 class="section-title" id="exp">Professional Experience</h2>
+    <div class="exp-row">
+        <div>
+            <div class="exp-company">Fidelis Investors</div>
+            <div class="exp-role">Investment Analyst</div>
+        </div>
+        <div class="exp-date">2025 — Present</div>
+    </div>
+    <p style="color: var(--text-dim);">Leading underwriting for $100M+ securitizations and revolving credit facilities. Developed internal tools to automate compliance auditing for 2026 guidelines.</p>
+
+    <footer>
+        &copy; 2026 Built with Precision & GitHub Pages.
+    </footer>
+</div>
+
+</body>
+</html>
